@@ -1,14 +1,9 @@
-# autor: Sergio alejandro vazquez pineda
-# Primero creamos la clase del perro simplemente con un nombre, y le damosla opcion de ladrar
 class Perro:
     def __init__(self, nombre,):
         self.nombre = nombre
 
     def ladrar(self):
         print(f"{self.nombre} dice: ¡Guau guau!")
-
-# ahora definimos cual sera la reaccion, y la accion que hace la persona, si la accion es de tal forma entonces pongo que yo hice tal accion y que kobe reacciono de tal manera
-# y asi con cada accion o si no elige esa accion el perro no entiende lo que quiero hacer
 
     def reaccionar(self, accion, persona):
         if accion == "comida":
@@ -20,8 +15,7 @@ class Perro:
         else:
             print(f"\n{self.nombre} no entiende lo que intentas hacer...")
 
-# ahora creamos la clase de la persona que seria yo, definimos que la interaccion sera con el perro y le damos las opciones
-# entonces si elegimos tal accion el perro reaccionara de tal forma acorde a la accion las cuales ya definimos anteriormente
+
 class Persona:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -42,7 +36,6 @@ class Persona:
         else:
             print("Opción no válida.")
 
-# ahora pues definimos quien es quien, yo soy sergio y mi perro es kobe, nos presento, mi perro ladra y finalmente yo interactuo con kobe.
 yo = Persona("Sergio")
 mi_perro = Perro("Kobe")
 
@@ -51,3 +44,4 @@ print(f"Hola, soy {yo.nombre} y este es mi perro {mi_perro.nombre}.\n")
 mi_perro.ladrar()
 
 yo.interactuar_con_perro(mi_perro)
+
