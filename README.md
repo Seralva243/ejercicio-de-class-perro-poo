@@ -50,4 +50,20 @@ print(f"Hola, soy {yo.nombre} y este es mi perro {mi_perro.nombre}.\n")
 
 mi_perro.ladrar()
 
+
 yo.interactuar_con_perro(mi_perro)
+
+# Esta seria la salida 
+Hola, soy Sergio y este es mi perro Kobe.
+
+Kobe dice: ¡Guau guau!
+
+Kobe está triste. ¿Qué quieres hacer?
+
+1. Dar comida
+2. Dar juguete
+3. Acariciar
+
+Elige una opción: 1
+
+Sergio le dio comida a Kobe. está feliz y mueve la cola!
